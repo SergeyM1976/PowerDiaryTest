@@ -30,18 +30,6 @@ namespace PowerDiaryTestWebApp.Infrastructure
         public override VirtualPathData GetVirtualPath(RequestContext requestContext, RouteValueDictionary values)
         {
             return null;
-            /*
-            VirtualPathData result = null;
-            string requestedUrl = requestContext.HttpContext.Request.FilePath;
-            var croute = _repository.GetRouteByCompressedFilePath(requestedUrl);
-
-
-            if (croute != null)
-            {
-                result = new RouteData(this, new RedirectRouteHandler(croute.Uri));
-            }
-            return result;
-            */
         }
     }
 }
