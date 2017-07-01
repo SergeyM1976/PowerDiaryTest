@@ -1,0 +1,7 @@
+.vs/**
+#PowerDiaryTestWebApp/PowerDiaryTestWebApp.csproj.user
+PowerDiaryTestWebApp/bin/**
+PowerDiaryTestWebApp/obj/**
+PowerDiaryTestWebApp/App_Data
+packages/**
+

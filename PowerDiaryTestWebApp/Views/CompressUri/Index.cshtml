@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Uri Compressor";
+}
+@model IEnumerable<PowerDiaryTestWebApp.Models.RouteModel>
+<div id="content">
+    @Html.React("CompressedRouteBox", new
+{
+    initialData = Model,
+    url = Url.Action("UriList"),
+    submitUrl = Url.Action("AddUri"),
+    pollInterval = 4000,
+})
+
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+<script src="@Url.Content("~/Scripts/CompressUri.jsx")"></script>
+@Html.ReactInitJavaScript()
+
+
+
+
+
